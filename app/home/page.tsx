@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Services from '../components/Services';
 import Work from '../components/Work';
+import Contact from '../components/Contact';
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
             <About />
             <Services />
             <Work />
+            <Contact />
         </main>
 
     );
