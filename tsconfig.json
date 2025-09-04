@@ -32,8 +32,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "app/components/Navbar.tsx", "app/components/Header.jsx"  ],
+    ".next/types/**/*.ts",
+    "app/components/Navbar.tsx",
+    "app/components/Header.jsx",
+    "app/home/page.jsx"
+, "app/layout.jsx"  ],
   "exclude": [
     "node_modules"
   ]
