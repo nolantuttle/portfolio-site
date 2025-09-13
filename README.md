@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Welcome to my personal portfolio website — a place where I showcase my work, projects, and skills. Built with Next.js 14 and styled with Tailwind CSS v4.
 
-## Getting Started
+Tech Stack
+	•	Next.js 14 – App Router
+ 	•	Node.js 24.5 – Javascript engine
+	•	Tailwind CSS v4 – Styling
+	•	next-themes – Dark mode support
+	•	Linode – Deployment
 
-First, run the development server:
+ How to use this app:
+   Clone the repo and install dependencies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  git clone https://github.com/nolantuttle/portfolio-site.git
+  cd portfolio
+  npm install
+  npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Preview:
+<img width="800" height="530" alt="Screenshot 2025-09-12 at 6 17 37 PM" src="https://github.com/user-attachments/assets/666548b5-8a4c-47c3-a4ee-2bebfb0f353c" />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contact:
+  Portfolio: https://nolantuttle.com
+  Email:  nolantuttle@gmail.com
+  LinkedIn:  https://www.linkedin.com/in/nolan-tuttle-07295830a/
