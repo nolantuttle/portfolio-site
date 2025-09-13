@@ -37,7 +37,7 @@ const Work = () => {
 
             <a href="" className='w-max flex items-center justify-center gap-2
             text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto
-            my-20 hover:bg-[#fcf4ff] duration-500'>
+            my-20 hover:bg-[#fcf4ff] dark:hover:bg-[#1a1a1a] duration-500'>
                 Show more <Image src={assets.right_arrow_bold} alt='right arrow' />
             </a>
 

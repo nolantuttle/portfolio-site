@@ -15,8 +15,8 @@ export default function HomePage() {
                 <Navbar />
                 <Header />
                 <About />
-                <Services />
-                <Work />
+                {/* <Services /> */}
+                {/* <Work /> */}
                 <Contact />
                 <Footer />
             </main>
