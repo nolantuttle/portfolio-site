@@ -3,7 +3,7 @@
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 import { useState, useEffect } from 'react'
 export default function ThemeProvider({children, ...props}) {
-const [mounted, setMounted] = useState(false);
+const [mounted, setMounted] = useState(true);
 
   useEffect(() => setMounted(true), []);
 

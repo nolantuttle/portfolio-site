@@ -10,7 +10,7 @@ import ThemeProvider from '../components/ThemeProvider';
 
 export default function HomePage() {
     return (
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        // <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <main>
                 <Navbar />
                 <Header />
@@ -20,6 +20,6 @@ export default function HomePage() {
                 <Contact />
                 <Footer />
             </main>
-        </ThemeProvider>
+        // </ThemeProvider>
     );
 }
