@@ -5,17 +5,12 @@ import Logo from './Logo'
 
 const Footer = () => {
     return (
+        
         <div>
-            <div>
-                
-
-                <div className='w-max flex items-center gap-2 mx-auto'>
-                <Logo className='w-12 mx-auto mb-2' />
-                    <Image src={assets.mail_icon} alt='' className='w-6' />
-                    nolantuttle@gmail.com
-                </div>
+            <div className='w-max flex items-center gap-2 mx-auto translate-y-[110%]'>
+                <Image src={assets.mail_icon} alt='' className='w-6' />
+                nolantuttle@gmail.com
             </div>
-
             <div className='text-center sm:flex items-center justify-between border-t
             border-gray-400 mx-[10%] mt-12 py-6'>
                 <p>© 2025 Nolan Tuttle. All rights reserved</p>
@@ -25,7 +20,6 @@ const Footer = () => {
                     <li><a target='_blank' href="https://github.com/nolantuttle">Github</a></li>
                 </ul>
             </div>
-
         </div>
     )
 }
