@@ -78,27 +78,17 @@ export const assets = {
     supabase
 };
 
-export const workData = [
+export const projectData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'GaggiaBerry',
+        description: 'PID control system for Gaggia Classic Pro espresso machine',
+        bgImage: '/project1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Placeholder',
+        description: 'lorem ipsum',
         bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+    }
 ]
 
 export const serviceData = [
