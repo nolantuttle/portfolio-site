@@ -36,6 +36,10 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import supabase from './supabase.png';
+import platform_icon from './platforms_icon.svg';
+import eclipse_icon from './eclipse.png';
+import raspberrypi_icon from './raspberrypi.png';
+import gcc_icon from './gcc.png';
 
 export const assets = {
     user_image,
@@ -75,19 +79,28 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    supabase
+    supabase,
+    platform_icon,
+    eclipse_icon,
+    raspberrypi_icon,
+    gcc_icon
 };
 
 export const projectData = [
     {
         title: 'GaggiaBerry',
-        description: 'PID control system for Gaggia Classic Pro espresso machine',
-        bgImage: '/project1.png',
+        description: 'PID control system for Gaggia Classic Pro espresso machine.',
+        bgImage: '/coffee.png',
     },
     {
-        title: 'Placeholder',
-        description: 'lorem ipsum',
-        bgImage: '/work-2.png',
+        title: 'PhytoPi',
+        description: 'IoT-based controlled environment for plant growth. (Currently in progress).',
+        bgImage: '/phytopi.png',
+    },
+    {
+        title: 'seaShell',
+        description: 'A custom Unix/Linux command line interpreter with batch file or interactive input',
+        bgImage: '/cli.png',
     }
 ]
 
@@ -99,11 +112,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skills', frontend: 'HTML, CSS, JavaScript React Js, Next.Js', backend: 'Java, C++, Python' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skills', description: 'Embedded C, C++, Python, MIPS/ARM64 Assembly'},
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - Expected Graduation May 2026' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms/Protocols', description: 'ARM Cortex-M, ESP32, Raspberry Pi, I2C, SPI, UART' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.supabase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.eclipse_icon, assets.raspberrypi_icon, assets.gcc_icon, assets.git
 ];

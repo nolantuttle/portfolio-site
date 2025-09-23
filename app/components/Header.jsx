@@ -14,11 +14,11 @@ const Header = () => {
                 Hi! I'm Nolan Tuttle! <Image src={assets.hand_icon} alt=''
                     className='w-6' /></h3>
             <h1 className={`${ovo.className}text-3xl sm:text-6xl lg:text-[66px]`}>
-                Backend Software Engineer based in Phoenix </h1>
+                Embedded Systems Engineer based in Phoenix </h1>
             <p className='max-w-2xl mx-auto font-Ovo'>
-                I am a Software Engineer from Phoenix with experience
-                creating a variety of projects from embedded PID systems
-                to Spring Boot websites to iOS app development.
+                I am an aspiring Embedded Engineer from Phoenix, AZ with experience
+                creating a variety of projects from IoT-based microcontroller projects
+                to custom PID control systems designed for performance and responsiveness.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <a href="#contact" className='px-10 py-3 bg-black text-white border rounded-full border-white gap-2

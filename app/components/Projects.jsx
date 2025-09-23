@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 const Projects = () => {
     return (
-        <div id="projects" className='w-full px-[12%] py-40 scroll-mt-20'>
-            <h2 className='text-center text-5xl'>My latest work</h2>
+        <div id="projects" className='w-full px-[12%] py-10 scroll-mt-20'>
+            <h2 className='text-center text-5xl'>My Latest Projects!</h2>
 
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
-                Here are all of my development projects! </p>
+                Here are some of my recent development projects! </p>
 
             <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
                 {projectData.map((project, index) => (
@@ -28,7 +28,7 @@ const Projects = () => {
                 ))}
             </div>
 
-            <a href="" className='w-max flex items-center justify-center gap-2
+            <a href="https://github.com/nolantuttle" className='w-max flex items-center justify-center gap-2
             text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto
             my-20 hover:bg-[#fcf4ff] dark:hover:bg-[#1a1a1a] duration-500'>
                 Show more <Image src={assets.right_arrow_bold} alt='right arrow' />
