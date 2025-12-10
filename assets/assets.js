@@ -89,18 +89,21 @@ export const assets = {
 export const projectData = [
     {
         title: 'GaggiaBerry',
-        description: 'PID control system for Gaggia Classic Pro espresso machine.',
-        bgImage: '/coffee.png',
+        description: 'Boiler set-point controller for Gaggia Classic Pro espresso machine using Raspberry Pi.',
+        bgImage: '/GaggiaBerry.png',
+        link: 'https://github.com/nolantuttle/GaggiaBerry',
     },
     {
         title: 'PhytoPi',
         description: 'IoT-based controlled environment for plant growth. (Currently in progress).',
-        bgImage: '/phytopi.png',
+        bgImage: '/PhytoPi.png',
+        link: 'https://github.com/nolantuttle/PhytoPi',
     },
     {
-        title: 'seaShell',
-        description: 'A custom Unix/Linux command line interpreter with batch file or interactive input',
-        bgImage: '/cli.png',
+        title: 'DE10 Audio Memory Game',
+        description: 'Simon-style audio output memory game implemented on DE10-Standard FPGA using VHDL.',
+        bgImage: '/de10-standard.png',
+        link: 'https://github.com/nolantuttle/DE10AudioGame'
     }
 ]
 
@@ -112,7 +115,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skills', description: 'Embedded C, C++, Python, MIPS/ARM64 Assembly'},
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skills', description: 'Embedded C, C++, Python, MIPS/ARM64 Assembly' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - Expected Graduation May 2026' },
     { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms/Protocols', description: 'ARM Cortex-M, ESP32, Raspberry Pi, I2C, SPI, UART' }
 ];
