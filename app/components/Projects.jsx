@@ -14,9 +14,8 @@ const Projects = () => {
                 {projectData.map((project, index) => (
                     <div key={index}
                         className='aspect-square bg-no-reapeat bg-cover bg-center rounded-lg
-                        relative cursor-pointer group'
+                        relative cursor-pointer group' href={project.link}
                         style={{ backgroundImage: `url(${project.bgImage})` }}>
-                        <li><a target='_blank' href={project.link}></a></li>
                         <div className='bg-white/80 w-10/12 rounded-md absolute bottom-3
                         left-1/2 -translate-x-1/2 py-2 px-2 flex items-center
                         justify-between duration-500 group-hover:bottom-7'>
