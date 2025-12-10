@@ -10,11 +10,11 @@ const Projects = () => {
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
                 Here are some of my recent development projects! </p>
 
-            <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5' href={project.link}>
                 {projectData.map((project, index) => (
                     <div key={index}
                         className='aspect-square bg-no-reapeat bg-cover bg-center rounded-lg
-                        relative cursor-pointer group' href={project.link}
+                        relative cursor-pointer group'
                         style={{ backgroundImage: `url(${project.bgImage})` }}>
                         <div className='bg-white/80 w-10/12 rounded-md absolute bottom-3
                         left-1/2 -translate-x-1/2 py-2 px-2 flex items-center
