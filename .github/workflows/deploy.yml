@@ -24,4 +24,4 @@ jobs:
         ssh -o StrictHostKeyChecking=no $SSH_USER@$LINODE_HOST "cd /home/nolan/nolan-website && git pull && cd .. && ./deploy.sh"
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
-        SSH_HOST: ${{ secrets.LINODE_HOST }}
+        LINODE_HOST: ${{ secrets.LINODE_HOST }}
