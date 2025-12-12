@@ -10,9 +10,9 @@ const Projects = () => {
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12'>
                 Here are some of my recent development projects! </p>
 
-            <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5' href={project.link}>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
                 {projectData.map((project, index) => (
-                    <div key={index}
+                    <div key={index} href={project.link}
                         className='aspect-square bg-no-reapeat bg-cover bg-center rounded-lg
                         relative cursor-pointer group'
                         style={{ backgroundImage: `url(${project.bgImage})` }}>
