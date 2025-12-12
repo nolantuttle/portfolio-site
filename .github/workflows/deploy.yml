@@ -1,0 +1,27 @@
+name: Deploy to Linode
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Deploy to Linode
+      run: |
+        ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_LINODE_HOST "cd /home/nolan/nolan-website && git pull && cd .. && ./deploy.sh"
+      env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_HOST: ${{ secrets.LINODE_HOST }}
