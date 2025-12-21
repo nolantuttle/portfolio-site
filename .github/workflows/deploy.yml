@@ -21,7 +21,7 @@ jobs:
 
     - name: Deploy to Linode
       run: |
-        ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $SSH_USER@$LINODE_HOST "cd /home/$SSH_USER/portfolio-site/ && git pull && sudo /usr/bin/bash /home/$SSH_USER/deploy.sh"
+        ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $SSH_USER@$LINODE_HOST "sudo /usr/bin/bash /home/$SSH_USER/deploy.sh"
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         LINODE_HOST: ${{ secrets.LINODE_HOST }}
