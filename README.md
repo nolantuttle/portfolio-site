@@ -33,6 +33,6 @@ Built with Next.js, React, and Tailwind CSS.
 
   Portfolio: https://nolantuttle.com
   
-  Email:  nolantuttle@gmail.com
+  Email:  nolantuttle@nolantuttle.com
   
   LinkedIn:  https://www.linkedin.com/in/nolan-tuttle-07295830a/
