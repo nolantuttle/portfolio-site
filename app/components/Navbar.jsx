@@ -1,6 +1,6 @@
 "use client";
 import { assets } from '../../assets/assets'
-import {useTheme} from "next-themes"
+import { useTheme } from "next-themes"
 import Image from 'next/image'
 import Logo from './Logo'
 import React, { useEffect, useRef, useState } from 'react'
@@ -36,13 +36,13 @@ const Navbar = () => {
             <div id="navbar" className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
                 <Image src={assets.header_bg_color} alt="" className='w-full' />
             </div>
-            <nav className={`w-full fixed px-4 lg:px-4 xl:px-[2%] py-4 flex items-center justify-between z-50 
+            <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 
                 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 <a href="#top">
                     <Logo className='w-18 cursor-pointer mr-14' />
                 </a>
 
-                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 absolute left-1/3 -translate-x-1/32 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"} `}>
+                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 absolute left-1/2 -translate-x-1/2 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"} `}>
                     <li><a className='font-Ovo' href="#top">Home</a></li>
                     <li><a className='font-Ovo' href="#about">About Me</a></li>
                     { /* <li><a className='font-Ovo' href="#services">Services</a></li> */}
@@ -52,8 +52,8 @@ const Navbar = () => {
 
                 <div className='flex items-center gap-4'>
 
-                {/* TODO: ADD DARK MODE FUNCTIONALITY*/}
-                { /*<button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                    {/* TODO: ADD DARK MODE FUNCTIONALITY*/}
+                    { /*<button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                     <Image src={assets.moon_icon} alt='' className='w-6' />
     </button> */}
 
