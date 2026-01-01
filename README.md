@@ -1,6 +1,5 @@
 # Nolan's Portfolio Website
-Welcome to my personal portfolio website where I showcase my work, projects, and skills.
-Built with Next.js, React, and Tailwind CSS.
+This is my personal portfolio website project which I built to deepen my understanding of web languages and to showcase my projects and personal goals!
 
 ## Tech Stack:
 
