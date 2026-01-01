@@ -1,4 +1,4 @@
-name: Deploy to Linode
+name: Deploy Script
 
 on:
   push:
