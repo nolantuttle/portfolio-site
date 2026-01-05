@@ -26,7 +26,9 @@ This is my personal portfolio website project which I built to deepen my underst
   	npm run dev
 
 ## Preview:
-<img width="800" height="530" alt="Screenshot 2025-09-12 at 6 17 37 PM" src="https://github.com/user-attachments/assets/666548b5-8a4c-47c3-a4ee-2bebfb0f353c" />
+<img width="1718" height="910" alt="Screenshot 2026-01-05 001252" src="https://github.com/user-attachments/assets/69b5993e-0f18-4bc6-b4ad-b1d971521dff" />
+
+
 
 ## Contact Me:
 
