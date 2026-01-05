@@ -40,6 +40,12 @@ import platform_icon from './platforms_icon.svg';
 import eclipse_icon from './eclipse.png';
 import raspberrypi_icon from './raspberrypi.png';
 import gcc_icon from './gcc.png';
+import coffee from '../public/coffee.jpg';
+import soldering from '../public/soldering.jpg';
+import soldering2 from '../public/soldering2.jpg';
+import printing from '../public/printing.jpg';
+import camaro from '../public/camaro.jpg';
+import happy from './happy.png';
 
 export const assets = {
     user_image,
@@ -83,14 +89,20 @@ export const assets = {
     platform_icon,
     eclipse_icon,
     raspberrypi_icon,
-    gcc_icon
+    gcc_icon,
+    coffee,
+    soldering,
+    soldering2,
+    printing,
+    happy,
+    camaro
 };
 
 export const projectData = [
     {
         title: 'GaggiaBerry',
         description: 'Boiler set-point controller for Gaggia Classic Pro espresso machine using Raspberry Pi.',
-        bgImage: '/GaggiaBerry.png',
+        bgImage: '/GaggiaBerry.jpg',
         link: 'https://github.com/nolantuttle/GaggiaBerry',
     },
     {
