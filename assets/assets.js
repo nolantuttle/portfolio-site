@@ -43,7 +43,7 @@ import gcc_icon from './gcc.png';
 import coffee from '../public/coffee.jpg';
 import soldering from '../public/soldering.jpg';
 import soldering2 from '../public/soldering2.jpg';
-import printing from '../public/printing.jpg';
+import printing from './printing.png';
 import camaro from '../public/camaro.jpg';
 import happy from './happy.png';
 

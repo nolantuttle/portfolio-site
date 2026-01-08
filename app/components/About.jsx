@@ -8,16 +8,14 @@ const About = () => {
             <h2 className='text-center text-5xl'>About Me</h2>
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-10'>
-                <div className='w-100 sm:w-100 rounded-3xl max-w-none'>
-                    <Image src={assets.happy} alt='user' className='w-full h-165 rounded-3xl' />
-                </div>
+                <Image src={assets.happy} alt='user' className='w-80 h-full rounded-3xl object-cover' />
                 <div className='flex-1'>
                     <p className='mb-10 max-w-2xl'>
-                        I’m an Embedded Systems Engineer specializing in low-level programming, system design, and connected IoT devices.
+                        I'm an Embedded Systems Engineer specializing in low-level programming, system design, and connected IoT devices.
                         My hands-on experience includes working with a wide range of microcontrollers
                         (such as ARM Cortex-M, ESP32), embedded Linux, and IoT sensors/actuators.
                         I have engineered robust solutions in resource-constrained environments including a custom Unix/Linux shell,
-                        a virtual memory simulator, and fast, responsive PID control systems. I’m skilled in hardware-software integration
+                        a virtual memory simulator, and fast, responsive PID control systems. I'm skilled in hardware-software integration
                         and communicating over protocols like SPI, UART, and I2C.
                     </p>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl'>
@@ -45,43 +43,39 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="relative w-full flex flex-col lg:flex-row items-start gap-8">
-
-                <div className="py-5 flex-none lg:w-1/4 flex flex-col justify-center">
-                    <div className="flex w-full flex-col lg:flex-row items-start gap-4">
-                        <div className="flex-none h-115 lg:w-3/4 mt-8 bg-white bg-opacity-80 p-4 rounded-lg shadow-md flex-col justify-start">
-                            <p className='text-2xl mb-7 max-w-2xl font-semibold'>
-                                When I'm not writing software, you can find me:
-                            </p>
-                            <ul className="text-l list-disc list-inside space-y-2">
-                                <li>Experimenting with 3D printing new designs</li>
-                                <li>Soldering together custom electronics projects</li>
-                                <li>Working on my 86' Camaro</li>
-                            </ul>
-
-                        </div>
-
-                        <div className="relative w-full sm:w-80 h-130 flex-none">
-                            <div className="absolute top-0 left-230 w-100 h-125 rounded-xl overflow-hidden shadow-lg">
-                                <Image src={assets.soldering2} alt="Soil Moisture Sensor" className="w-full h-full object-cover" />
-                            </div>
-                            <div className="absolute top-0 left-135 w-95 h-75 rounded-xl overflow-hidden shadow-lg">
-                                <Image src={assets.printing} alt="3D Printing" className="w-full h-full object-cover" />
-                            </div>
-                            <div className="absolute top-75 left-135 w-95 h-50 rounded-xl overflow-hidden shadow-lg">
-                                <Image src={assets.camaro} alt="Yellow Camaro" className="w-full h-full object-cover" />
-                            </div>
-                            <div className="absolute top-0 left-15 w-120 h-125 rounded-xl overflow-hidden shadow-lg">
-                                <Image src={assets.soldering} alt="Soldering" className="w-full h-full object-cover" />
-                            </div>
-
-                        </div>
-                    </div>
-                    {/* BOTTOM: caption across full width */}
-                    <div className="mt-6 w-full text-center">
-                        <p className="text-gray-500 italic text-lg">
+            <div className="w-full flex flex-col lg:flex-row items-start gap-8 my-10">
+                {/* Text section - 1/4 width on large screens */}
+                <div className="w-full lg:w-1/4 flex-none">
+                    <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
+                        <p className='text-2xl mb-7 font-semibold'>
+                            When I'm not writing software, you can find me:
+                        </p>
+                        <ul className="text-lg list-disc list-inside space-y-3">
+                            <li>Experimenting with 3D printing new designs (sorting all my components with gridfinity)</li>
+                            <li>Soldering together custom electronics projects</li>
+                            <li>Working on my 86' Camaro</li>
+                        </ul>
+                        <p className="text-gray-500 italic text-lg mt-8">
                             But only after making a fresh latte! ☕
                         </p>
+                    </div>
+                </div>
+
+                {/* Images section - 2/4 width on large screens */}
+                <div className="w-full lg:w-2/3 relative h-[600px] sm:h-[700px] flex-none">
+                    {/* Soldering - largest image on the left */}
+                    <div className="absolute top-0 left-0 w-[48%] h-[65%] rounded-3xl overflow-hidden shadow-lg">
+                        <Image src={assets.soldering} alt="Soldering" className="w-full h-full object-cover" />
+                    </div>
+
+                    {/* 3D Printing - top right */}
+                    <div className="absolute top-0 right-0 w-[48%] h-[35%] rounded-3xl overflow-hidden shadow-lg">
+                        <Image src={assets.printing} alt="3D Printing" className="w-full h-full object-cover" />
+                    </div>
+
+                    {/* Camaro - bottom right */}
+                    <div className="absolute top-[38%] right-0 w-[48%] h-[35%] rounded-3xl overflow-hidden shadow-lg">
+                        <Image src={assets.camaro} alt="Yellow Camaro" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
