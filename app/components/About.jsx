@@ -55,9 +55,6 @@ const About = () => {
                             <li>Soldering together custom electronics projects</li>
                             <li>Working on my 86' Camaro</li>
                         </ul>
-                        <p className="text-gray-500 italic text-lg mt-8">
-                            But only after making a fresh latte! ☕
-                        </p>
                     </div>
                 </div>
 
