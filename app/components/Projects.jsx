@@ -12,7 +12,7 @@ const Projects = () => {
 
             <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
                 {projectData.map((project, index) => (
-                    <div key={index} href={project.link}
+                    <a key={index} href={project.link}
                         className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg
                         relative cursor-pointer group'
                         style={{ backgroundImage: `url(${project.bgImage})` }}>
@@ -24,7 +24,7 @@ const Projects = () => {
                                 <p className='text-sm text-gray-700'>{project.description}</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
 

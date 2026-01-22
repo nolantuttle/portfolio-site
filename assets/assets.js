@@ -100,14 +100,14 @@ export const assets = {
 
 export const projectData = [
     {
-        title: 'GaggiaBerry',
-        description: 'Boiler set-point controller for Gaggia Classic Pro espresso machine using Raspberry Pi.',
+        title: 'Gaggietto',
+        description: 'Teensy 4.0-based PID controller for Gaggia Classic Pro espresso machines.',
         bgImage: '/GaggiaBerry.jpg',
         link: 'https://github.com/nolantuttle/GaggiaBerry',
     },
     {
         title: 'PhytoPi',
-        description: 'IoT-based controlled environment for plant growth. (Currently in progress).',
+        description: 'IoT-based controlled environment for plant growth. (Currently in development).',
         bgImage: '/PhytoPi.png',
         link: 'https://github.com/nolantuttle/PhytoPi',
     },
