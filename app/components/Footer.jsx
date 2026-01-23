@@ -5,11 +5,11 @@ import Logo from './Logo'
 
 const Footer = () => {
     return (
-        
+
         <div>
             <div className='w-max flex items-center gap-2 mx-auto translate-y-[110%]'>
                 <Image src={assets.mail_icon} alt='' className='w-6' />
-                nolantuttle@gmail.com
+                nolantuttle@nolantuttle.com
             </div>
             <div className='text-center sm:flex items-center justify-between border-t
             border-gray-400 mx-[10%] mt-12 py-6'>
