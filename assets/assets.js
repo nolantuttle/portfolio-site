@@ -39,9 +39,6 @@ import gcc_icon from './gcc.png';
 import hero_circle from './hero_circle.jpg';
 import about_photo from './about_photo.jpg';
 import logo from './logo.svg';
-import gaggietto from './Gaggietto.jpg';
-import phytopi from './PhytoPi.png';
-import de10_audio_game from './de10-standard.png';
 
 export const assets = {
     code_icon,
@@ -91,19 +88,19 @@ export const projectData = [
     {
         title: 'Gaggietto',
         description: 'Teensy 4.0-based PID controller for Gaggia Classic Pro espresso machines.',
-        bgImage: './Gaggietto.jpg',
+        bgImage: '/Gaggietto.jpg',
         link: 'https://github.com/nolantuttle/Gaggietto',
     },
     {
         title: 'PhytoPi',
         description: 'IoT-based controlled environment for plant growth. (Currently in development).',
-        bgImage: './PhytoPi.png',
+        bgImage: '/PhytoPi.png',
         link: 'https://github.com/nolantuttle/PhytoPi',
     },
     {
         title: 'DE10 Audio Memory Game',
         description: 'Simon-style audio output memory game implemented on DE10-Standard FPGA using VHDL.',
-        bgImage: './de10-standard.png',
+        bgImage: '/de10-standard.png',
         link: 'https://github.com/nolantuttle/DE10AudioGame'
     }
 ]
