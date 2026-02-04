@@ -8,17 +8,12 @@ const About = () => {
             <h2 className='text-center text-5xl'>About Me</h2>
 
             <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-10'>
-                <Image src={assets.happy} alt='user' className='w-80 h-full rounded-3xl object-cover' />
+                <Image src={assets.about_photo} alt='about me photo' className='w-100 h-full rounded-3xl object-cover' />
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl'>
-                        I'm an Embedded Systems Engineer specializing in low-level programming, system design, and connected IoT devices.
-                        My hands-on experience includes working with a wide range of microcontrollers
-                        (such as ARM Cortex-M, ESP32), embedded Linux, and IoT sensors/actuators.
-                        I have engineered robust solutions in resource-constrained environments including a custom Unix/Linux shell,
-                        a virtual memory simulator, and fast, responsive PID control systems. I'm skilled in hardware-software integration
-                        and communicating over protocols like SPI, UART, and I2C.
+                    <p className='mb-12 max-w-3xl'>
+                        I'm Nolan, an embedded software engineering student passionate about all embedded systems, from resource-constrained microcontrollers to complex Linux-based platforms. I love designing and implementing software that necessitates reliability and real-time performance, offering users seamless experiences from compact devices is what drives me.
                     </p>
-                    <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl'>
+                    <ul className='grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
                             <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-500'
                                 key={index}>
@@ -40,40 +35,6 @@ const About = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
-            </div>
-
-            <div className="w-full flex flex-col lg:flex-row items-start gap-8 my-10">
-                {/* Text section - 1/4 width on large screens */}
-                <div className="w-full lg:w-1/4 flex-none">
-                    <div className="bg-white bg-opacity-80 p-6 rounded-lg shadow-md">
-                        <p className='text-2xl mb-7 font-semibold'>
-                            When I'm not writing software, you can find me:
-                        </p>
-                        <ul className="text-lg list-disc list-inside space-y-3">
-                            <li>Experimenting with 3D printing new designs (sorting all my components with gridfinity)</li>
-                            <li>Soldering together custom electronics projects</li>
-                            <li>Working on my 86' Camaro</li>
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Images section - 2/4 width on large screens */}
-                <div className="w-full lg:w-2/3 relative h-[600px] sm:h-[700px] flex-none">
-                    {/* Soldering - largest image on the left */}
-                    <div className="absolute top-0 left-0 w-[48%] h-[65%] rounded-3xl overflow-hidden shadow-lg">
-                        <Image src={assets.soldering} alt="Soldering" className="w-full h-full object-cover" />
-                    </div>
-
-                    {/* 3D Printing - top right */}
-                    <div className="absolute top-0 right-0 w-[48%] h-[35%] rounded-3xl overflow-hidden shadow-lg">
-                        <Image src={assets.printing} alt="3D Printing" className="w-full h-full object-cover" />
-                    </div>
-
-                    {/* Camaro - bottom right */}
-                    <div className="absolute top-[38%] right-0 w-[48%] h-[35%] rounded-3xl overflow-hidden shadow-lg">
-                        <Image src={assets.camaro} alt="Yellow Camaro" className="w-full h-full object-cover" />
-                    </div>
                 </div>
             </div>
         </div>

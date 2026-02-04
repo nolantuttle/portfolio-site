@@ -4,17 +4,17 @@ import Image from "next/image";
 import { assets } from "../../assets/assets";
 
 type LogoProps = {
-    width?: number;
-    height?: number
+  width?: number;
+  height?: number
 }
 
-export default function Logo({ width = 50, height = 25}: LogoProps) {
+export default function Logo({ width = 50, height = 25 }: LogoProps) {
   const { theme, systemTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <Image
-      src={currentTheme === "dark" ? assets.logo_dark : assets.logo_light}
+      src={currentTheme === "dark" ? assets.logo : assets.logo}
       alt="Logo"
       width={width}
       height={height}

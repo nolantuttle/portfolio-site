@@ -1,4 +1,3 @@
-import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -11,11 +10,8 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo_light from './logo_light.svg';
-import logo_dark from './logo_dark.svg';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -40,15 +36,14 @@ import platform_icon from './platforms_icon.svg';
 import eclipse_icon from './eclipse.png';
 import raspberrypi_icon from './raspberrypi.png';
 import gcc_icon from './gcc.png';
-import coffee from '../public/coffee.jpg';
-import soldering from '../public/soldering.jpg';
-import soldering2 from '../public/soldering2.jpg';
-import printing from './printing.png';
-import camaro from '../public/camaro.jpg';
-import happy from './happy.png';
+import hero_circle from './hero_circle.jpg';
+import about_photo from './about_photo.jpg';
+import logo from './logo.svg';
+import gaggietto from './Gaggietto.jpg';
+import phytopi from './PhytoPi.png';
+import de10_audio_game from './de10-standard.png';
 
 export const assets = {
-    user_image,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -61,11 +56,8 @@ export const assets = {
     git,
     mongodb,
     right_arrow_white,
-    logo_light,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
-    profile_img,
     download_icon,
     hand_icon,
     header_bg_color,
@@ -90,31 +82,28 @@ export const assets = {
     eclipse_icon,
     raspberrypi_icon,
     gcc_icon,
-    coffee,
-    soldering,
-    soldering2,
-    printing,
-    happy,
-    camaro
+    hero_circle,
+    about_photo,
+    logo
 };
 
 export const projectData = [
     {
         title: 'Gaggietto',
         description: 'Teensy 4.0-based PID controller for Gaggia Classic Pro espresso machines.',
-        bgImage: '/GaggiaBerry.jpg',
-        link: 'https://github.com/nolantuttle/GaggiaBerry',
+        bgImage: './Gaggietto.jpg',
+        link: 'https://github.com/nolantuttle/Gaggietto',
     },
     {
         title: 'PhytoPi',
         description: 'IoT-based controlled environment for plant growth. (Currently in development).',
-        bgImage: '/PhytoPi.png',
+        bgImage: './PhytoPi.png',
         link: 'https://github.com/nolantuttle/PhytoPi',
     },
     {
         title: 'DE10 Audio Memory Game',
         description: 'Simon-style audio output memory game implemented on DE10-Standard FPGA using VHDL.',
-        bgImage: '/de10-standard.png',
+        bgImage: './de10-standard.png',
         link: 'https://github.com/nolantuttle/DE10AudioGame'
     }
 ]
@@ -127,9 +116,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skills', description: 'Embedded C, C++, Python, MIPS/ARM64 Assembly' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - Expected Graduation May 2026' },
-    { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms/Protocols', description: 'ARM Cortex-M, ESP32, Raspberry Pi, I2C, SPI, UART' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - April 2026' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Embedded C, C++, Python, VHDL, Java' },
+    { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms', description: 'ARM Cortex-M, ESP32, Raspberry Pi, RP2040' }
 ];
 
 export const toolsData = [

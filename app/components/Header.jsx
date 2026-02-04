@@ -7,17 +7,16 @@ const Header = () => {
     return (
         <div id="header" className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
             <div>
-                <Image src={assets.user_image} alt=''
+                <Image src={assets.hero_circle} alt=''
                     className='rounded-full w-64' />
             </div>
             <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-                Hi! I'm Nolan Tuttle! </h3>
+                Hi, I'm Nolan Tuttle! </h3>
             <h1 className={`${ovo.className}text-3xl sm:text-6xl lg:text-[66px]`}>
-                Embedded Systems Engineer based in Phoenix </h1>
+                Embedded Software Engineer based in Phoenix </h1>
             <p className='max-w-2xl mx-auto font-Ovo'>
-                I am an aspiring Embedded Engineer from Phoenix, AZ with experience
-                creating a variety of projects from IoT-based microcontroller projects
-                to custom PID control systems designed for performance and responsiveness.
+                Embedded software engineering student experienced in real-time control, microcontroller firmware, and Linux-based
+                embedded systems.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <a href="#contact" className='px-10 py-3 bg-black text-white border rounded-full border-white gap-2
