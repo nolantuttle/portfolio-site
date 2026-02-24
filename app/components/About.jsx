@@ -11,9 +11,9 @@ const About = () => {
                 <Image src={assets.about_photo} alt='about me photo' className='w-100 h-full rounded-3xl object-cover' />
                 <div className='flex-1'>
                     <p className='mb-12 max-w-3xl'>
-                        I'm Nolan, an embedded software engineering student passionate about all embedded systems, from resource-constrained microcontrollers to complex Linux-based platforms. I love designing and implementing software that necessitates reliability and real-time performance, offering users seamless experiences from compact devices is what drives me.
+                        I'm Nolan, a software engineering student passionate about building software across the full stack from embedded firmware on resource-constrained microcontrollers to full-stack web applications and Linux-based systems. I love designing and implementing software that demands reliability and real-world impact, whether that's a real-time embedded controller or a deployed web service that users interact with every day.
                     </p>
-                    <ul className='grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl'>
+                    <ul className='grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
                             <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-500'
                                 key={index}>

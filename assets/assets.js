@@ -39,6 +39,7 @@ import gcc_icon from './gcc.png';
 import hero_circle from './hero_circle.jpg';
 import about_photo from './about_photo.jpg';
 import logo from './logo.svg';
+import tools_icon from './tools_icon.svg';
 
 export const assets = {
     code_icon,
@@ -81,7 +82,8 @@ export const assets = {
     gcc_icon,
     hero_circle,
     about_photo,
-    logo
+    logo,
+    tools_icon
 };
 
 export const projectData = [
@@ -115,7 +117,10 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - April 2026' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Embedded C, C++, Python, VHDL, Java' },
-    { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms', description: 'ARM Cortex-M, ESP32, Raspberry Pi, RP2040' }
+    { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms', description: 'ARM Cortex-M, ESP32, Raspberry Pi, RP2040' },
+    { icon: assets.tools_icon, iconDark: assets.tools_icon, title: 'Concepts', description: 'Linux, REST APIs, CI / CD, Agile / SDLC, Server Deployment, Cloudflare, Computer Vision' }
+
+
 ];
 
 export const toolsData = [
