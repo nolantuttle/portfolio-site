@@ -103,17 +103,17 @@ export const projectData: Project[] = [
         description: 'A machine learning pipeline that classifies resistor images by ohm value and wattage using computer vision and SVM.',
         bgImage: ['/ResistorClassification1.png'],
         github: 'https://github.com/nolantuttle/ResistorClassification',
-        summary: 'ResistorClassification is an end-to-end ML pipeline that identifies resistor values from raw images. Images are preprocessed using OpenCV — converted to HSV color space and analyzed via hue, saturation, and brightness histograms combined with color moments — to extract a rich feature vector per image. A multi-output linear SVM then classifies both resistance (37 classes) and wattage (5 classes) simultaneously, achieving 67% and 80% accuracy respectively across ~2,800 images. The model is deployed as a Flask web application allowing users to upload a resistor image and receive a prediction in real time',
+        summary: 'ResistorClassification is an end-to-end ML pipeline that identifies resistor values from raw images. Images are preprocessed using OpenCV — converted to HSV color space and analyzed via hue, saturation, and brightness histograms combined with color moments to extract a rich feature vector per image. A multi-output linear SVM then classifies both resistance (37 classes) and wattage (5 classes) simultaneously, achieving 67% and 80% accuracy respectively across ~2,800 images. The model is deployed as a Flask web application allowing users to upload a resistor image and receive a prediction in real time',
         tech_stack: 'Python, scikit-learn, OpenCV, Flask, NumPy, SciPy',
         status: 'In Development'
     },
     {
         title: 'PhytoPi',
         description: 'IoT-based controlled environment for plant growth. (Currently in development).',
-        bgImage: ['/PhytoPi.png'],
+        bgImage: ['/PhytoPi.png', '/PhytoPi2.png', '/PhytoPi3.png'],
         summary: 'PhytoPi combines a Raspberry Pi-based sensor controller with a modern Flutter dashboard to create a complete plant monitoring ecosystem. The system tracks temperature, humidity, soil moisture, and water levels, while providing real-time data visualization, automated alerts, and AI-powered insights through a responsive web and mobile interface.',
         tech_stack: 'Flutter, Dart, C, Python, SQLite, Supabase',
-        status: 'In Development'
+        status: 'Complete - Presentation at the GCU Capstone Showcase April 8th, 2026'
     },
     {
         title: 'DE10 Audio Memory Game',

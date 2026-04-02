@@ -77,15 +77,12 @@ const Projects = () => {
 
                         </div>
 
-                        <div className='w-1/2 flex-shrink-0 rounded-lg overflow-hidden flex flex-col gap-2'>
-                            {Array.isArray(selectedProject.bgImage)
-                                ? selectedProject.bgImage.map((img, index) => (
-                                    <img key={index} src={img} alt={selectedProject.title}
-                                        className='w-full h-1/2 object-contain rounded-lg' />
-                                ))
-                                : <img src={selectedProject.bgImage} alt={selectedProject.title}
-                                    className='w-full h-full object-cover rounded-lg' />
-                            }
+                        <div className='w-1/2 flex-shrink-0 flex flex-col gap-2 overflow-hidden'>
+                            {selectedProject.bgImage.map((img, index) => (
+                                <img key={index} src={img} alt={selectedProject.title}
+                                    className={`w-full object-contain rounded-lg`}
+                                    style={{ height: `${100 / selectedProject.bgImage.length}%` }} />
+                            ))}
                         </div>
 
                         <button onClick={() => setSelectedProject(null)}
