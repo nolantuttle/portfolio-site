@@ -47,6 +47,7 @@ const Projects = () => {
                     <div className='bg-white dark:bg-neutral-600 rounded-xl p-8 max-w-5xl w-[80%] h-[70%] relative shadow-xl flex gap-8'
                         onClick={(e) => e.stopPropagation()}>
 
+                        {/* LEFT SIDE: text + buttons stacked */}
                         <div className='flex flex-col justify-between w-1/2 overflow-y-auto no-scrollbar'>
                             <div>
                                 <h2 className='text-2xl font-semibold mb-2'>{selectedProject.title}</h2>
@@ -58,29 +59,40 @@ const Projects = () => {
                                 <p className='text-gray-600 dark:text-gray-300 mb-6'>{selectedProject.status}</p>
                             </div>
 
-                            {selectedProject.github && (
-                                <a href={selectedProject.github} target='_blank' rel='noopener noreferrer'
-                                    className='flex items-center gap-2 text-gray-700 dark:text-gray-300 border-[0.5px]
-                                border-gray-700 rounded-full px-6 py-2 w-max hover:bg-[#fcf4ff]
-                                dark:hover:bg-[#1a1a1a] duration-500'>
-                                    View on GitHub <Image src={assets.right_arrow_bold} alt='right arrow' />
-                                </a>
-                            )}
-                            {selectedProject.link && (
-                                <a href={selectedProject.link} target='_blank' rel='noopener noreferrer'
-                                    className='flex items-center gap-2 text-gray-700 dark:text-gray-300 border-[0.5px]
-                                border-gray-700 rounded-full px-6 py-2 w-max hover:bg-[#fcf4ff]
-                                dark:hover:bg-[#1a1a1a] duration-500'>
-                                    See more <Image src={assets.right_arrow_bold} alt='right arrow' />
-                                </a>
-                            )}
-
+                            {/* Buttons sit at the bottom of the left column */}
+                            <div className='flex flex-row flex-wrap gap-3 mt-4'>
+                                {selectedProject.github && (
+                                    <a href={selectedProject.github} target='_blank' rel='noopener noreferrer'
+                                        className='flex items-center gap-4 text-gray-700 dark:text-gray-300 border-[0.5px]
+                    border-gray-700 rounded-full px-6 py-2 w-max hover:bg-[#fcf4ff]
+                    dark:hover:bg-[#1a1a1a] duration-500'>
+                                        View on GitHub <Image src={assets.right_arrow_bold} alt='right arrow' />
+                                    </a>
+                                )}
+                                {selectedProject.link && (
+                                    <a href={selectedProject.link} target='_blank' rel='noopener noreferrer'
+                                        className='flex items-center gap-4 text-gray-700 dark:text-gray-300 border-[0.5px]
+                    border-gray-700 rounded-full px-6 py-2 w-max hover:bg-[#fcf4ff]
+                    dark:hover:bg-[#1a1a1a] duration-500'>
+                                        See more <Image src={assets.right_arrow_bold} alt='right arrow' />
+                                    </a>
+                                )}
+                                {selectedProject.paper && (
+                                    <a href={selectedProject.paper} download
+                                        className='flex items-center gap-4 text-gray-700 dark:text-gray-300 border-[0.5px]
+                    border-gray-700 rounded-full px-6 py-2 w-max hover:bg-[#fcf4ff]
+                    dark:hover:bg-[#1a1a1a] duration-500'>
+                                        Download Research Paper <Image src={assets.download_icon} alt='download' className='w-4' />
+                                    </a>
+                                )}
+                            </div>
                         </div>
 
+                        {/* RIGHT SIDE: images */}
                         <div className='w-1/2 flex-shrink-0 flex flex-col gap-2 overflow-hidden'>
                             {selectedProject.bgImage.map((img, index) => (
                                 <img key={index} src={img} alt={selectedProject.title}
-                                    className={`w-full object-contain rounded-lg`}
+                                    className='w-full object-contain rounded-lg'
                                     style={{ height: `${100 / selectedProject.bgImage.length}%` }} />
                             ))}
                         </div>
@@ -91,8 +103,9 @@ const Projects = () => {
                         </button>
                     </div>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     )
 }
 

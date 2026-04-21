@@ -92,6 +92,7 @@ export type Project = {
     bgImage: string[]
     github?: string
     link?: string
+    paper?: string
     summary: string
     tech_stack: string
     status: string
@@ -116,6 +117,16 @@ export const projectData: Project[] = [
         status: 'Complete - Presentation at the GCU Capstone Showcase April 8th, 2026'
     },
     {
+        title: 'A.I.M',
+        description: 'Autonomous Image-based Machine — vision-only autonomous robot navigating without GPS or LiDAR, using stereo depth and visual odometry',
+        bgImage: ['/AIM.png'],
+        link: 'https://aigcu.github.io/AIM-Website/',
+        paper: '/AIM_Localization_Paper.pdf',
+        summary: 'The A.I.M. (Autonomous Image-based Machine) project is a fully autonomous robot that navigates using only stereo camera input — no GPS, LiDAR, or external sensors. I was responsible for the stereo vision pipeline: performing a 150-frame stereo calibration to achieve near-coplanar alignment, tuning SGBM disparity parameters (32 disparities, block size 7, 320×240) for a reliable depth range of 0.23–5m, and optimizing the perception pipeline from a 30 Hz target to a sustained 40–60 Hz. The system uses a hybrid localization strategy combining continuous stereo visual odometry with landmark-based drift correction for real-time waypoint navigation on embedded hardware.',
+        tech_stack: 'Python, OpenCV, SGBM Stereo Matching, Raspberry Pi 5, MobileNetV2',
+        status: 'Won 2nd Place at 2026 GCU Honors Symposium (STEM Category)'
+    },
+    {
         title: 'DE10 Audio Memory Game',
         description: 'Simon-style audio output memory game implemented on DE10-Standard FPGA using VHDL.',
         bgImage: ['/de10-standard.png'],
@@ -123,15 +134,6 @@ export const projectData: Project[] = [
         summary: 'This project is an audio-based memory game running on Intel’s SoC FPGA platform. Running on the DE10 Standard embedded board, it maps the four buttons to four unique audio samples and generates a sequence of these audio samples to play from the WM8731 audio codec through the line out port on the board. The goal of the player is to press the buttons which are mapped to the four audio samples to generate the same sequence of audio samples outputted by the board, with each round the sequence will increment by 1, increasing difficulty of the game. By utilizing both the Hard Processing System (HPS) and FPGA fabric, the application delivers a responsive interaction that combines audio, button input, and hex display feedback.',
         tech_stack: 'VHDL, C',
         status: 'Complete'
-    },
-    {
-        title: 'A.I.M',
-        description: 'Autonomous Image-based Machine, a fully autonomous robot that navigates using vision only; no GPS or LiDAR',
-        bgImage: ['/AIM.png'],
-        link: 'https://aigcu.github.io/AIM-Website/',
-        summary: 'The A.I.M. (Autonomous Image-based Machine) project is developing a fully autonomous robot capable of navigating its environment using only stereo camera input — no GPS, LiDAR, or external sensors. We implement a hybrid localization strategy combining continuous stereo visual odometry with intermittent landmark-based drift correction to achieve real-time, waypoint-capable navigation on embedded hardware.',
-        tech_stack: 'Python, Raspberry Pi 5, MobileNetV2',
-        status: 'In Development — Selected as a Finalist for the 2026 GCU Honors Showcase (STEM Category)'
     },
     {
         title: 'Gaggietto',
