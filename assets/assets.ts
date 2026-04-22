@@ -136,12 +136,12 @@ export const projectData: Project[] = [
         status: 'Complete'
     },
     {
-        title: 'Gaggietto',
-        description: 'Teensy 4.0-based PID controller for Gaggia Classic Pro espresso machines.',
-        bgImage: ['/Gaggietto.jpg'],
-        github: 'https://github.com/nolantuttle/Gaggietto',
-        summary: 'This is my little tinkering project with the Gaggia Classic Pro to add a PID control system for the boiler control using Arduino and microcontrollers. The goal is to improve thermal stability over the stock boiler through constant switching of a solid state relay while being minimally invasive to stock hardware.',
-        tech_stack: 'C++, Teensy 4.0',
+        title: 'ESPresso',
+        description: 'ESP32C3 SuperMini-based PID controller for Gaggia Classic Pro espresso machines.',
+        bgImage: ['/ESPresso.jpg'],
+        github: 'https://github.com/nolantuttle/ESPresso',
+        summary: 'ESPresso is a custom embedded controller for the Gaggia Classic Pro espresso machine, built on an ESP32-C3 SuperMini. It implements closed-loop boiler temperature control via SSR and a tuned PID (Kp=38, Ki=4, Kd=250), accurate within ±1°F. A MOC3021 optoisolator and BTA41-600B TRIAC handle AC pump phase control via PWM, with a zero-crossing MOC3041 and snubber circuit pending for cleaner switching. The brew switch is wired as a GPIO sense input, triggering a live shot timer on the SSD1306 OLED alongside temp, setpoint, and PID state. An XDB401 pressure transducer is wired in for future closed-loop pressure profiling. All controls — mode toggle, brew/steam switching, and ±1°F temp adjustment via resistor ladder — are hardware-based with no app required.',
+        tech_stack: 'C++, ESP32',
         status: 'In Development'
     }
 
