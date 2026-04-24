@@ -102,7 +102,7 @@ export const projectData: Project[] = [
     {
         title: 'ResistorClassification',
         description: 'A machine learning pipeline that classifies resistor images by ohm value and wattage using computer vision and SVM.',
-        bgImage: ['/ResistorClassification1.png'],
+        bgImage: ['/ResistorClassification1.png', '/ResistorClassification2.png'],
         github: 'https://github.com/nolantuttle/ResistorClassification',
         summary: 'ResistorClassification is an end-to-end ML pipeline that identifies resistor values from raw images. Images are preprocessed using OpenCV — converted to HSV color space and analyzed via hue, saturation, and brightness histograms combined with color moments to extract a rich feature vector per image. A multi-output linear SVM then classifies both resistance (37 classes) and wattage (5 classes) simultaneously, achieving 67% and 80% accuracy respectively across ~2,800 images. The model is deployed as a Flask web application allowing users to upload a resistor image and receive a prediction in real time',
         tech_stack: 'Python, scikit-learn, OpenCV, Flask, NumPy, SciPy',
@@ -110,8 +110,8 @@ export const projectData: Project[] = [
     },
     {
         title: 'PhytoPi',
-        description: 'IoT-based controlled environment for plant growth. (Currently in development).',
-        bgImage: ['/PhytoPi.png', '/PhytoPi2.png', '/PhytoPi3.png'],
+        description: 'IoT-based controlled environment for plant growth w/ AI analytics.',
+        bgImage: ['/PhytoPi.jpg', '/PhytoPi2.png'],
         summary: 'PhytoPi combines a Raspberry Pi-based sensor controller with a modern Flutter dashboard to create a complete plant monitoring ecosystem. The system tracks temperature, humidity, soil moisture, and water levels, while providing real-time data visualization, automated alerts, and AI-powered insights through a responsive web and mobile interface.',
         tech_stack: 'Flutter, Dart, C, Python, SQLite, Supabase',
         status: 'Complete - Presentation at the GCU Capstone Showcase April 8th, 2026'
@@ -119,7 +119,7 @@ export const projectData: Project[] = [
     {
         title: 'A.I.M',
         description: 'Autonomous Image-based Machine — vision-only autonomous robot navigating without GPS or LiDAR, using stereo depth and visual odometry',
-        bgImage: ['/AIM.png'],
+        bgImage: ['/AIM.jpg', '/AIM2.png'],
         link: 'https://aigcu.github.io/AIM-Website/',
         paper: '/AIM_Localization_Paper.pdf',
         summary: 'The A.I.M. (Autonomous Image-based Machine) project is a fully autonomous robot that navigates using only stereo camera input — no GPS, LiDAR, or external sensors. I was responsible for the stereo vision pipeline: performing a 150-frame stereo calibration to achieve near-coplanar alignment, tuning SGBM disparity parameters (32 disparities, block size 7, 320×240) for a reliable depth range of 0.23–5m, and optimizing the perception pipeline from a 30 Hz target to a sustained 40–60 Hz. The system uses a hybrid localization strategy combining continuous stereo visual odometry with landmark-based drift correction for real-time waypoint navigation on embedded hardware.',
