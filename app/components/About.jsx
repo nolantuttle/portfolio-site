@@ -15,21 +15,22 @@ const About = () => {
                     </p>
                     <ul className='grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
-                            <li className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:-translate-y-1 duration-500'
+                            <li className='border-[0.5px] border-gray-400 dark:border-gray-600 rounded-xl p-6 cursor-pointer hover:-translate-y-1 dark:hover:bg-neutral-800 duration-500'
                                 key={index}>
-                                <Image src={icon} alt={title} className='w-7 mt-3' />
-                                <h3 className='my-2 font-bold text-gray-700'>{title}</h3>
+                                <Image src={icon} alt={title} className='w-7 mt-3 dark:hidden' />
+                                <Image src={iconDark} alt={title} className='w-7 mt-3 hidden dark:block' />
+                                <h3 className='my-2 font-bold text-gray-700 dark:text-gray-300'>{title}</h3>
                                 <BoldLabelSentence key={index} text={description}></BoldLabelSentence>
 
                             </li>
                         ))}
                     </ul>
 
-                    <h4 className='my-6 text-gray-700'> Tools I use:</h4>
+                    <h4 className='my-6 text-gray-700 dark:text-gray-300'> Tools I use:</h4>
                     <ul className='flex items-center gap-3 sm:gap-5'>
                         {toolsData.map((tool, index) => (
-                            <li className='flex items-center justify-center w-12 sm:w-14 aspect-square 
-                            border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
+                            <li className='flex items-center justify-center w-12 sm:w-14 aspect-square
+                            border border-gray-400 dark:border-gray-600 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
                                 key={index}>
                                 <Image src={tool} alt='Tool' className='w-5, sm:w-7' />
                             </li>

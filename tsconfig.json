@@ -12,10 +12,10 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -35,8 +35,10 @@
     ".next/types/**/*.ts",
     "app/components/Navbar.tsx",
     "app/components/Header.jsx",
-    "app/home/page.jsx"
-, "app/layout.jsx"  ],
+    "app/home/page.jsx",
+    "app/layout.jsx",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

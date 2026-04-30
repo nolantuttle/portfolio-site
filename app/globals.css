@@ -26,3 +26,11 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.header-gradient {
+    background: radial-gradient(ellipse 100% 100% at 100% 0%, rgba(197, 255, 150, 0.58) 0%, transparent 65%);
+}
+
+:where(.dark, .dark *) .header-gradient {
+    background: radial-gradient(ellipse 100% 100% at 100% 0%, rgba(80, 50, 160, 0.23) 0%, transparent 65%);
+}

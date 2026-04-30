@@ -34,12 +34,13 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import supabase from './supabase.png';
 import platform_icon from './platforms_icon.svg';
 import eclipse_icon from './eclipse.png';
-import raspberrypi_icon from './raspberrypi.png';
-import gcc_icon from './gcc.png';
+import raspberrypi_icon from './raspberrypi.svg';
+import linux_icon from './linux.png';
 import hero_circle from './hero_circle.jpg';
 import about_photo from './about_photo.jpg';
 import logo from './logo.svg';
 import tools_icon from './tools_icon.svg';
+import tools_icon_dark from './tools_icon_dark.svg';
 
 export const assets = {
     code_icon,
@@ -79,11 +80,12 @@ export const assets = {
     platform_icon,
     eclipse_icon,
     raspberrypi_icon,
-    gcc_icon,
+    linux_icon,
     hero_circle,
     about_photo,
     logo,
-    tools_icon
+    tools_icon,
+    tools_icon_dark
 };
 
 export type Project = {
@@ -104,6 +106,7 @@ export const projectData: Project[] = [
         description: 'A machine learning pipeline that classifies resistor images by ohm value and wattage using computer vision and SVM.',
         bgImage: ['/ResistorClassification1.png', '/ResistorClassification2.png'],
         github: 'https://github.com/nolantuttle/ResistorClassification',
+        link: 'https://nolantuttle.com/resistor-classifier',
         summary: 'ResistorClassification is an end-to-end ML pipeline that identifies resistor values from raw images. Images are preprocessed using OpenCV — converted to HSV color space and analyzed via hue, saturation, and brightness histograms combined with color moments to extract a rich feature vector per image. A multi-output linear SVM then classifies both resistance (37 classes) and wattage (5 classes) simultaneously, achieving 67% and 80% accuracy respectively across ~2,800 images. The model is deployed as a Flask web application allowing users to upload a resistor image and receive a prediction in real time',
         tech_stack: 'Python, scikit-learn, OpenCV, Flask, NumPy, SciPy',
         status: 'In Development'
@@ -112,6 +115,7 @@ export const projectData: Project[] = [
         title: 'PhytoPi',
         description: 'IoT-based controlled environment for plant growth w/ AI analytics.',
         bgImage: ['/PhytoPi.jpg', '/PhytoPi2.png'],
+        github: 'https://github.com/nolantuttle/PhytoPi',
         summary: 'PhytoPi combines a Raspberry Pi-based sensor controller with a modern Flutter dashboard to create a complete plant monitoring ecosystem. The system tracks temperature, humidity, soil moisture, and water levels, while providing real-time data visualization, automated alerts, and AI-powered insights through a responsive web and mobile interface.',
         tech_stack: 'Flutter, Dart, C, Python, SQLite, Supabase',
         status: 'Complete - Presentation at the GCU Capstone Showcase April 8th, 2026'
@@ -152,11 +156,11 @@ export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B. of Science in Software Engineering Grand Canyon University - April 2026' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Embedded C, C++, Python, VHDL, Java' },
     { icon: assets.platform_icon, iconDark: assets.project_icon_dark, title: 'Platforms', description: 'ARM Cortex-M, ESP32, Raspberry Pi, RP2040' },
-    { icon: assets.tools_icon, iconDark: assets.tools_icon, title: 'Concepts', description: 'Linux, REST APIs, CI / CD, Agile / SDLC, Server Deployment, Cloudflare, Computer Vision' }
+    { icon: assets.tools_icon, iconDark: assets.tools_icon_dark, title: 'Concepts', description: 'Linux, REST APIs, CI / CD, Agile / SDLC, Server Deployment, Cloudflare, Computer Vision' }
 
 
 ];
 
 export const toolsData = [
-    assets.vscode, assets.eclipse_icon, assets.raspberrypi_icon, assets.gcc_icon, assets.git
+    assets.vscode, assets.eclipse_icon, assets.raspberrypi_icon, assets.linux_icon, assets.git
 ];

@@ -22,12 +22,12 @@ const Projects = () => {
                         className='animate-fadeIn aspect-square bg-no-repeat bg-cover bg-center rounded-lg
                         relative cursor-pointer group'
                         style={{ backgroundImage: `url(${project.bgImage[0]})` }}>
-                        <div className='bg-white/80 w-10/12 rounded-md absolute bottom-3
+                        <div className='bg-white/80 dark:bg-neutral-700/90 w-10/12 rounded-md absolute bottom-3
                         left-1/2 -translate-x-1/2 py-2 px-2 flex items-center
                         justify-between duration-500 group-hover:bottom-7'>
                             <div>
                                 <h2 className='font-semibold text-center'>{project.title}</h2>
-                                <p className='text-sm text-gray-700'>{project.description}</p>
+                                <p className='text-sm text-gray-700 dark:text-gray-300'>{project.description}</p>
                             </div>
                         </div>
                     </div>
@@ -35,9 +35,9 @@ const Projects = () => {
             </div>
 
             <div onClick={() => setShowAll(!showAll)} className='w-max flex items-center justify-center gap-2
-                text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto
+                text-gray-700 dark:text-white border-[0.5px] border-gray-700 rounded-full px-10 py-3 mx-auto
                 my-20 hover:bg-[#fcf4ff] dark:hover:bg-[#1a1a1a] duration-500 cursor-pointer'>
-                {showAll ? 'Show less' : 'Show more'} <Image src={assets.right_arrow_bold} alt='right arrow' />
+                {showAll ? 'Show less' : 'Show more'} <Image src={assets.right_arrow_bold} alt='right arrow' className='w-4 dark:invert' />
             </div>
 
             {selectedProject && (
